@@ -1,0 +1,105 @@
+
+
+
+
+-----------------------
+basic --
+take 2 numbers print bigger
+take shall script 10orgements
+
+shall scripts python concepts
+if condarion(controlstatements)
+loops(for loop while loop)
+
+dovelope a basic html website 
+
+
+git hub foldrs make it daily tasks ---ansible terraform /k8s /jenkins /automations /aws
+
+
+python task ---disply iam users in aws by usesing python
+
+linux helth che
+
+-----jenkins creating and pipeline
+
+basic --
+print bigger
+take shall script 10orgements	
+
+shall scripts python concepts
+if condarion(controlstatements)
+loops(for loop while loop)
+
+dovelope a basic html website 
+
+16/02/2021----
+
+
+
+------------------------------------------
+static website hosting ------creating s3 ----index.html ..inside our photot
+awk,sed, commands
+
+dockr layers--reduce docker image size --- debuging commands 
+10--docker files ---
+
+----------------------
+what is ses ---setting up mails 
+
+
+
+-------------
+docker installing-----creating image nginx
+
+docker search nginx
+  375  docker pull nginx
+  376  docker images
+  377  docker run --name my-nginx-c1 --detach nginx  ----iam giveing imag name and running image in background mode
+  378  docker run --name my-nginx-c2 -p 80:80 -v /home/vivek/html/:/usr/share/nginx/html:ro -d nginx ----mounting path .html
+  379  vi /home/vivek/html/index.html
+  380  curl 18.207.160.39
+  381  docker netork ls
+  382  docker network ls
+  383  docker images
+  384  docker ps -a...................
+
+------------------
+alpine-----
+
+# Set up the image generated in the first step and name it builder
+2
+FROM node:10-alpine as builder
+3
+WORKDIR /nebula-web-console
+4
+# Copy the current project to the image
+5
+ADD . /nebula-web-console
+6
+# Start building
+7
+RUN npm install
+8
+RUN npm run build
+9
+....
+10
+11
+# Start the second step build
+12
+FROM node:10-alpine
+13
+WORKDIR /nebula-web-console
+14
+# Copy the product of the first step image to the current image. Only one image layer is used here, which saves the number of image layers in the previous building step.
+15
+16
+COPY --from=builder . /nebula-web-console
+17
+CMD ["npm", "run", "docker-start"]
+
+
+17/2/2021
+----------------------------------------------------
+create ubuntu a, ubuntu b,  log in from a to b ....and check ping
